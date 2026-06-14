@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+}
+h1 {
+    text-align: center;
+}
+.form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+/* this .student-card comes from javascript */
+.student-card {
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 5px solid steelblue;
+    border-radius: 5px;
+}
+/* this .delete-btn also comes from javascript */
+.delete-btn {
+    background-color: red;
+    margin-top: 10px;
+}
+
+
+
+
