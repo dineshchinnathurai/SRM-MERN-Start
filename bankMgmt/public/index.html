@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+
+    <title>
+        Banking Management System
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            🏦 Banking Management System
+        </h1>
+
+
+        <!-- DASHBOARD -->
+
+        <div class="dashboard">
+
+            <div class="card">
+
+                <h3>
+                    Total Customers
+                </h3>
+
+                <p id="totalCustomers">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Total Balance
+                </h3>
+
+                <p id="totalBalance">
+                    ₹0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Savings Accounts
+                </h3>
+
+                <p id="savingsCount">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Current Accounts
+                </h3>
+
+                <p id="currentCount">
+                    0
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input type="text" id="searchInput" placeholder="Search by Account Number">
+
+
+            <button onclick="searchCustomer()">
+
+                Search
+
+            </button>
+
+
+            <button onclick="fetchCustomers()">
+
+                Show All
+
+            </button>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <div class="form-container">
+
+            <input type="number" id="accountNumber" placeholder="Account Number">
+
+
+            <input type="text" id="name" placeholder="Customer Name">
+
+
+            <input type="number" id="age" placeholder="Age">
+
+
+            <select id="gender">
+
+                <option value="">
+                    Gender
+                </option>
+
+                <option value="Male">
+                    Male
+                </option>
+
+                <option value="Female">
+                    Female
+                </option>
+
+            </select>
+
+
+            <input type="text" id="phone" placeholder="Phone Number">
+
+
+            <select id="accountType">
+
+                <option value="">
+                    Account Type
+                </option>
+
+                <option value="Savings">
+                    Savings
+                </option>
+
+                <option value="Current">
+                    Current
+                </option>
+
+            </select>
+
+
+            <input type="number" id="balance" placeholder="Opening Balance">
+
+
+            <button onclick="addCustomer()">
+
+                Create Account
+
+            </button>
+
+        </div>
+
+
+
+        <!-- TABLE -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Acc No
+                    </th>
+
+                    <th>
+                        Name
+                    </th>
+
+                    <th>
+                        Age
+                    </th>
+
+                    <th>
+                        Gender
+                    </th>
+
+                    <th>
+                        Phone
+                    </th>
+
+                    <th>
+                        Type
+                    </th>
+
+                    <th>
+                        Balance
+                    </th>
+
+                    <th>
+                        Actions
+                    </th>
+
+                    <th>
+                        Banking
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="customerTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
+
+
